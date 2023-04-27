@@ -12,11 +12,11 @@ public class Equipo {
         // Constructor vacío
     }
     
-    public Equipo(String nombre, int titulares, int suplentes, String directorTecnico, int puntos, int partidosJugados) {
-        this.nombre = nombre;
+    public Equipo(EquipoPrimeraDivision equipo, int titulares, int suplentes, int puntos, int partidosJugados) {
+        this.nombre = equipo.getNombreEquipo();
         this.titulares = titulares;
         this.suplentes = suplentes;
-        this.directorTecnico = directorTecnico;
+        this.directorTecnico = equipo.getNombreEquipo();
         this.puntos = puntos;
         this.partidosJugados = partidosJugados;
     }
